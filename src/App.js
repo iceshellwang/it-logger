@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { useEffect, Fragment } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import SearchBar from './components/layout/SearchBar'
+const App = () => {
   useEffect(() => {
     //Init Materialize JS
     M.AutoInit()
   }, [])
 
   return (
-    <div className="App">
-      My App
-    </div>
+    <Fragment>
+      <SearchBar />
+    </Fragment>
   );
 }
 
